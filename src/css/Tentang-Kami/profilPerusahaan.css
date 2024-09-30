@@ -1,0 +1,178 @@
+/* 
+----------------------
+hero profil perusahaan
+----------------------
+*/
+.hero-section-profil {
+  background-image: url(../../assets/profil-perusahaan-hero.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+/* 
+--------------------------------------
+profil dan sejarah singkat BPR sembada
+--------------------------------------
+*/
+.sejarah-sembada {
+  display: flex;
+  /* background-color: #b50b0b; */
+  justify-content: space-around;
+  margin-block: 10rem;
+  margin-inline: 5rem;
+  /* gap: 1rem; */
+}
+.cover-img-sejarah {
+  margin-top: 0.5rem;
+
+  /* height: max-content; */
+  flex-basis: 40%;
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+}
+.cover-img-sejarah img {
+  height: 60rem;
+  width: 40rem;
+  /* object-fit: cover; */
+  object-position: bottom;
+}
+
+.sejarah-desc {
+  flex-basis: 60%;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  align-items: flex-start;
+  /* background-color: #b50b0b; */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.sejarah-desc h2 {
+  color: #b50b0b;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.sejarah-desc p {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+/* 
+----------------------------
+responsif profil perusahaan
+----------------------------
+*/
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .cover-img-sejarah img {
+    height: 40rem;
+    width: 20rem;
+  }
+  .sejarah-sembada {
+    margin-block: 2rem;
+    margin-inline: 1rem;
+    /* flex-direction: column; */
+    gap: 1rem;
+    align-items: start;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sejarah-sembada {
+    margin-block: 2rem;
+    margin-inline: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .sejarah-sembada .sejarah-desc h2 {
+    font-size: 2rem;
+  }
+  .sejarah-desc p {
+    text-align: justify;
+    font-size: 1.1rem;
+  }
+  .cover-img-sejarah img {
+    height: 50rem;
+    width: 30rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-section-profil {
+    height: 35rem;
+  }
+  .sejarah-sembada {
+    margin-block: 2rem;
+    margin-inline: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .sejarah-sembada .sejarah-desc h2 {
+    font-size: 2rem;
+  }
+  .sejarah-desc p {
+    text-align: justify;
+    font-size: 1.1rem;
+  }
+  .cover-img-sejarah img {
+    height: 50rem;
+    width: 30rem;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .hero-section-profil {
+    height: 25rem;
+  }
+  .sejarah-sembada {
+    margin-block: 2rem;
+    margin-inline: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .sejarah-sembada .sejarah-desc h2 {
+    font-size: 2rem;
+  }
+  .sejarah-desc p {
+    text-align: justify;
+    font-size: 1rem;
+  }
+  .cover-img-sejarah img {
+    height: 40rem;
+    width: 25rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .hero-section-profil {
+    height: 23rem;
+  }
+  .sejarah-sembada {
+    margin-block: 3rem;
+    margin-inline: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .sejarah-desc {
+    margin-inline: 0.5rem;
+  }
+  .sejarah-desc h2 {
+    font-size: 2rem;
+  }
+  .sejarah-desc p {
+    text-align: justify;
+    font-size: 1rem;
+  }
+
+  .cover-img-sejarah img {
+    height: 30rem;
+    width: 20rem;
+  }
+}

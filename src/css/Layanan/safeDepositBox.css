@@ -1,0 +1,778 @@
+/* 
+----------------
+hero deposit box
+----------------
+*/
+
+.hero-section-sdb {
+  background-image: url(../../assets/sdb.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+
+/* test */
+
+/* 
+--------------
+deskripsi SDB
+-------------- 
+*/
+
+.contSdb {
+  margin-block: 10rem;
+  text-align: center;
+  /* background-color: rgb(35, 115, 185); */
+  /* width: 60%; */
+  margin-inline: 20rem;
+}
+.contSdb h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #b50b0b;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.contSdb p {
+  font-size: 1.4rem;
+}
+.contSdb span {
+  color: #b50b0b;
+}
+
+/* 
+--------------
+keunggulan SDB
+--------------
+*/
+
+.keunggulanSdb {
+  background-color: #b50b0b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: 3rem;
+}
+
+.contKeunggulan {
+  text-align: center;
+  padding: 2rem;
+  margin-inline: 4rem;
+  flex-basis: 50%;
+  /* background-color: aqua; */
+  /* align-items: end; */
+}
+.contKeunggulan h2 {
+  font-size: 2.4rem;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.contKeunggulan p {
+  font-size: 1.4rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+/* 
+---------------------
+card Save depisit bos
+---------------------
+*/
+.hovKeunggulan {
+  /* background-color: forestgreen; */
+  flex-basis: calc(33.33% - 1rem);
+  display: flex;
+  margin-inline: 10rem;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 1.5rem;
+}
+
+.sdbCardCont {
+  flex-basis: calc(33.33% - 1rem);
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  text-align: center;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+}
+.sdbCardCont h3 {
+  font-size: 2rem;
+  color: #b50b0b;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.sdbCardCont p {
+  font-size: 1rem;
+  /* font-weight: 500; */
+}
+
+.sdbCardCont:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.5);
+}
+
+/* 
+-----------------------
+Syarat dan ketentuan 
+-----------------------
+*/
+.persyaratan {
+  display: flex;
+  margin-top: 10rem;
+  margin-inline: 6rem;
+  margin-bottom: 5rem;
+  gap: 2rem;
+}
+
+.listSyarat {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.listSyarat h2,
+.list-harga-SDB .Judul-hargaSDB h2 {
+  font-size: 2.4rem;
+  color: #b50b0b;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.listSyarat li,
+.Judul-hargaSDB p {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.list-restricted {
+  list-style-type: lower-alpha;
+  margin-left: 2rem;
+}
+
+.tabelSyarat {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+/* css table persyaratan */
+.tabelSyarat h2 {
+  color: #b50b0b;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.tabelSyarat th {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #b50b0b;
+}
+.tabelSyarat td {
+  font-size: 1.1rem;
+}
+
+.jaminanKunci p,
+ul {
+  font-size: 1.4rem;
+}
+
+.link-to-formsdb {
+  /* background-color: #b50b0b; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.btn-to-formsdb {
+  background-color: #b50b0b;
+  padding: 2rem;
+  width: fit-content-moz-fit-content;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+}
+
+.btn-to-formsdb:hover {
+  color: white;
+  transform: translate(-2px, -2px);
+  box-shadow: 2px 2px black;
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  /* 
+  -------------------------
+  keterangan SDB
+  -------------------------
+  */
+  /* 
+  ------------------------
+  deskripsi keterangan SDB
+  ------------------------
+  */
+  .contSdb {
+    margin-inline: 1rem;
+    text-align: center;
+  }
+  .contSdb h2 {
+    font-size: 2rem;
+  }
+  .contSdb p {
+    font-size: 1.1rem;
+  }
+  .keunggulanSdb {
+    padding-inline: 1rem;
+  }
+  .contKeunggulan {
+    margin-inline: 0rem;
+  }
+  .contKeunggulan h2 {
+    font-size: 2rem;
+  }
+  .contKeunggulan p {
+    font-size: 1.1rem;
+    color: white;
+  }
+  /* 
+  -------------------
+  card keunggulan SDB
+  -------------------
+  
+  */
+  .hovKeunggulan {
+    flex-direction: row;
+    margin-inline: 0rem;
+    gap: 1rem;
+    /* background-color: aliceblue; */
+  }
+  .sdbCardCont {
+    margin-inline: 0rem;
+  }
+  .sdbCardCont h3 {
+    font-size: 1.5rem;
+    color: #b50b0b;
+    font-weight: 600;
+  }
+  .sdbCardCont p {
+    font-size: 1rem;
+  }
+
+  .listSyarat h2,
+  .list-harga-SDB .Judul-hargaSDB h2 {
+    font-size: 2rem;
+    color: #b50b0b;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  .listSyarat li,
+  .Judul-hargaSDB p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .jaminanKunci p,
+  ul {
+    font-size: 1.1rem;
+  }
+  .tabelSyarat th {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #b50b0b;
+  }
+  .tabelSyarat td {
+    font-size: 1.1rem;
+  }
+  .list-harga-SDB th {
+    font-size: 1.1rem;
+    color: #b50b0b;
+    text-align: center;
+  }
+  .list-harga-SDB td {
+    font-size: 1.1rem;
+  }
+  .list-harga-SDB h2 {
+    color: #b50b0b;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+  .list-harga-SDB h3 {
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+  }
+
+  .persyaratan {
+    margin-inline: 1.5rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* 
+  ----------------
+  hero section sdb
+  ----------------
+  */
+  .hero-section-sdb {
+    margin-top: 3rem;
+    height: 28rem;
+  }
+  /* 
+  ------------------------
+  deskripsi keterangan SDB
+  ------------------------
+  */
+  .contSdb {
+    margin-inline: 1rem;
+    text-align: center;
+  }
+  .contSdb h2 {
+    font-size: 2rem;
+  }
+  .contSdb p {
+    font-size: 1.1rem;
+  }
+  .keunggulanSdb {
+    padding-inline: 1rem;
+  }
+  .contKeunggulan {
+    margin-inline: 0rem;
+  }
+  .contKeunggulan h2 {
+    font-size: 2rem;
+  }
+  .contKeunggulan p {
+    font-size: 1.1rem;
+    color: white;
+  }
+  /* 
+  -------------------
+  card keunggulan SDB
+  -------------------
+  
+  */
+  .hovKeunggulan {
+    flex-direction: row;
+    margin-inline: 0rem;
+    gap: 0.5rem;
+    /* background-color: aliceblue; */
+  }
+  .sdbCardCont {
+    margin-inline: 0rem;
+  }
+  .sdbCardCont h3 {
+    font-size: 1.5rem;
+    color: #b50b0b;
+    font-weight: 600;
+  }
+  .sdbCardCont p {
+    font-size: 1rem;
+  }
+  .persyaratan {
+    flex-direction: column;
+  }
+  .listSyarat h2,
+  .list-harga-SDB .Judul-hargaSDB h2 {
+    font-size: 2rem;
+    color: #b50b0b;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  .listSyarat li,
+  .Judul-hargaSDB p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .jaminanKunci p,
+  ul {
+    font-size: 1.1rem;
+  }
+  .tabelSyarat th {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #b50b0b;
+  }
+  .tabelSyarat td {
+    font-size: 1.1rem;
+  }
+  .list-harga-SDB th {
+    font-size: 1.1rem;
+    color: #b50b0b;
+    text-align: center;
+  }
+  .list-harga-SDB td {
+    font-size: 1.1rem;
+  }
+  .list-harga-SDB h2 {
+    color: #b50b0b;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+  .list-harga-SDB h3 {
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+  }
+
+  .persyaratan {
+    margin-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* 
+  ----------------
+  hero section sdb
+  ----------------
+  */
+  .hero-section-sdb {
+    margin-top: 2.6rem;
+    height: 26rem;
+  }
+  /* 
+  ------------------------
+  deskripsi keterangan SDB
+  ------------------------
+  */
+  .contSdb {
+    margin-inline: 1rem;
+    text-align: center;
+  }
+  .contSdb h2 {
+    font-size: 2rem;
+  }
+  .contSdb p {
+    font-size: 1.1rem;
+  }
+  .keunggulanSdb {
+    padding-inline: 1rem;
+  }
+  .contKeunggulan {
+    margin-inline: 0rem;
+  }
+  .contKeunggulan h2 {
+    font-size: 2rem;
+  }
+  .contKeunggulan p {
+    font-size: 1.1rem;
+    color: white;
+  }
+  /* 
+  -------------------
+  card keunggulan SDB
+  -------------------
+  
+  */
+  .hovKeunggulan {
+    flex-direction: row;
+    margin-inline: 0rem;
+    gap: 0.5rem;
+    /* background-color: aliceblue; */
+  }
+  .sdbCardCont {
+    margin-inline: 0rem;
+  }
+  .sdbCardCont h3 {
+    font-size: 1.2rem;
+    color: #b50b0b;
+    font-weight: 600;
+  }
+  .sdbCardCont p {
+    font-size: 0.8rem;
+  }
+  .persyaratan {
+    margin-inline: 1.5rem;
+    flex-direction: column;
+    margin-block: 3rem;
+  }
+  .listSyarat h2,
+  .list-harga-SDB .Judul-hargaSDB h2 {
+    font-size: 2rem;
+    color: #b50b0b;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  .listSyarat li,
+  .Judul-hargaSDB p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .tabelSyarat h2 {
+    font-size: 2rem;
+  }
+  .tabelSyarat th {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #b50b0b;
+  }
+  .tabelSyarat td {
+    font-size: 1rem;
+  }
+  .list-harga-SDB th {
+    font-size: 1rem;
+    color: #b50b0b;
+    text-align: center;
+  }
+  .list-harga-SDB td {
+    font-size: 1rem;
+  }
+  .list-harga-SDB h2 {
+    color: #b50b0b;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+  .list-harga-SDB h3 {
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+  }
+  .jaminanKunci h2 {
+    font-size: 2rem;
+  }
+  .jaminanKunci p,
+  ul {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  /* 
+  ----------------
+  hero section sdb
+  ----------------
+  */
+  .hero-section-sdb {
+    margin-top: 2.3rem;
+    height: 23rem;
+  }
+  /* 
+  ------------------------
+  deskripsi keterangan SDB
+  ------------------------
+  */
+  .contSdb {
+    margin-inline: 1rem;
+    margin-block: 3rem;
+    text-align: center;
+  }
+  .contSdb h2 {
+    font-size: 2rem;
+  }
+  .contSdb p {
+    font-size: 1.1rem;
+  }
+
+  .contKeunggulan {
+    margin-inline: 0rem;
+  }
+  .contKeunggulan h2 {
+    font-size: 2rem;
+  }
+  .contKeunggulan p {
+    font-size: 1rem;
+    color: white;
+  }
+  /* 
+  -------------------
+  card keunggulan SDB
+  -------------------
+  
+  */
+  .hovKeunggulan {
+    flex-direction: column;
+    margin-inline: 1rem;
+    gap: 0.5rem;
+    /* background-color: aliceblue; */
+  }
+  .sdbCardCont {
+    margin-inline: 0rem;
+  }
+  .sdbCardCont h3 {
+    font-size: 1.5rem;
+    color: #b50b0b;
+    font-weight: 600;
+  }
+  .sdbCardCont p {
+    font-size: 1rem;
+  }
+  .persyaratan {
+    margin-inline: 1.5rem;
+    flex-direction: column;
+    margin-block: 3rem;
+  }
+  .listSyarat h2 {
+    font-size: 2rem;
+    color: #b50b0b;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  .listSyarat li,
+  .Judul-hargaSDB p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .tabelSyarat h2 {
+    font-size: 2rem;
+  }
+  .tabelSyarat th {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #b50b0b;
+  }
+  .tabelSyarat td {
+    font-size: 1rem;
+  }
+  .list-harga-SDB th {
+    font-size: 1rem;
+    color: #b50b0b;
+    text-align: center;
+  }
+  .list-harga-SDB td {
+    font-size: 1rem;
+  }
+  .list-harga-SDB h2 {
+    color: #b50b0b;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+  .list-harga-SDB h3 {
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+  }
+  .jaminanKunci h2 {
+    font-size: 2rem;
+  }
+  .jaminanKunci p,
+  ul {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  /* 
+  ----------------
+  hero section sdb
+  ----------------
+  */
+  .hero-section-sdb {
+    margin-top: 2.6rem;
+    height: 20rem;
+  }
+  /* 
+  ------------------------
+  deskripsi keterangan SDB
+  ------------------------
+  */
+  .contSdb {
+    margin-inline: 1rem;
+    margin-block: 3rem;
+    text-align: center;
+  }
+  .contSdb h2 {
+    font-size: 2rem;
+  }
+  .contSdb p {
+    font-size: 1rem;
+  }
+  /* 
+---------------------
+container keunggulan
+---------------------
+*/
+  .contKeunggulan {
+    margin-inline: 0rem;
+    padding-top: 0rem;
+    /* background-color: beige; */
+  }
+  .contKeunggulan h2 {
+    font-size: 2rem;
+  }
+  .contKeunggulan p {
+    font-size: 1rem;
+    color: white;
+  }
+  /* 
+  -------------------
+  card keunggulan SDB
+  -------------------
+  */
+  .hovKeunggulan {
+    flex-direction: column;
+    margin-inline: 1rem;
+    gap: 0.5rem;
+    /* background-color: aliceblue; */
+  }
+  .sdbCardCont {
+    margin-inline: 0rem;
+  }
+  .sdbCardCont h3 {
+    font-size: 1.5rem;
+    color: #b50b0b;
+    font-weight: 600;
+  }
+  .sdbCardCont p {
+    font-size: 1rem;
+  }
+  .persyaratan {
+    margin-inline: 1.5rem;
+    flex-direction: column;
+    margin-block: 3rem;
+  }
+  .listSyarat h2 {
+    font-size: 2rem;
+    color: #b50b0b;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  .listSyarat li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .tabelSyarat h2 {
+    font-size: 2rem;
+  }
+
+  .tabelSyarat th {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #b50b0b;
+  }
+  .tabelSyarat td {
+    font-size: 1rem;
+  }
+  .list-harga-SDB th {
+    font-size: 1rem;
+    color: #b50b0b;
+    text-align: center;
+  }
+  .list-harga-SDB td {
+    font-size: 1rem;
+  }
+  .list-harga-SDB h2 {
+    color: #b50b0b;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+  .list-harga-SDB h3 {
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+  }
+  .jaminanKunci h2 {
+    font-size: 2rem;
+  }
+  .jaminanKunci p,
+  ul {
+    font-size: 1rem;
+  }
+}

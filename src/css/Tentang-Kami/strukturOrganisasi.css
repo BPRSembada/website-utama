@@ -1,0 +1,321 @@
+/* 
+------------------------
+hero struktur organisasi
+------------------------
+\ */
+.hero-section-struktur {
+  background-image: url(/src/assets/struktur-organisasi-hero.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+/* 
+------------
+pesan CEO
+------------
+*/
+.cont-pesan-ceo {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 2rem;
+  margin-inline: 8rem;
+}
+.cont-pesan-ceo img {
+  width: 30rem;
+}
+.cont-pesan-ceo div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.cont-pesan-ceo h2 {
+  font-size: 2.4rem;
+  color: #b50b0b;
+
+  font-weight: 600;
+}
+.cont-pesan-ceo p {
+  font-size: 1.4rem;
+}
+/* 
+------------
+cart profile
+------------
+*/
+.card-strukturOrganisasi {
+  position: relative;
+  display: inline-block;
+  margin: 0.3rem;
+}
+
+.card-strukturOrganisasi img {
+  width: 300px;
+  height: 300px;
+}
+
+.card-strukturOrganisasi .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 1;
+  transition: all 0.3s ease;
+  padding-bottom: 1rem;
+  padding-inline: 0.5rem;
+}
+.overlay h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+.overlay p {
+  font-size: 1rem;
+}
+.card-strukturOrganisasi:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-strukturOrganisasi .overlay h3,
+.card-strukturOrganisasi .overlay p {
+  margin: 0;
+  text-align: center;
+}
+.profil_SDM {
+  width: 300px;
+}
+.profil_SDM h3 {
+  font-size: 1rem;
+}
+.profil_SDM li {
+  font-size: 0.8rem;
+  text-align: justify;
+}
+.cont-cart-profil {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+
+/* 
+------------------
+batas
+-------------------
+*/
+.cont-profil-SDM {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-inline: 8rem;
+}
+.cont-profil-SDM h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #b50b0b;
+}
+.cont-profil-SDM h3 {
+  font-size: 1.5rem;
+}
+
+.kategori-Sdm {
+  display: flex;
+  margin-top: 0.3rem;
+}
+.kategori-Sdm button {
+  border: none;
+  background-color: #b50b0b;
+  padding: 1rem;
+  color: #fff;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+}
+.kategori-Sdm button:hover {
+  background-color: #720b0b;
+}
+
+@media (max-width: 1200px) {
+  .cont-pesan-ceo {
+    /* flex-direction: column; */
+    margin-inline: 3rem;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+  }
+  .cont-pesan-ceo img {
+    width: 20rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-section-struktur {
+    height: 30rem;
+    margin-top: 2.8rem;
+  }
+  .cont-pesan-ceo {
+    /* flex-direction: column; */
+    margin-inline: 1rem;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+  }
+  .cont-pesan-ceo img {
+    width: 15rem;
+  }
+  .cont-pesan-ceo h2 {
+    font-size: 2rem;
+  }
+  .cont-pesan-ceo p {
+    font-size: 1.1rem;
+  }
+  .cont-profil-SDM {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    margin-inline: 0;
+    /* background-color: aqua; */
+    /* display: flex;
+    flex-direction: column;
+    gap: 1rem; */
+    align-items: center;
+  }
+  .cont-profil-SDM h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .cont-cart-profil {
+    align-items: start;
+    /* background-color: #b50b0b; */
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-section-struktur {
+    height: 28rem;
+    margin-top: 2.8rem;
+  }
+  .cont-pesan-ceo {
+    /* flex-direction: column; */
+    margin-inline: 1rem;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+  }
+  .cont-pesan-ceo img {
+    width: 15rem;
+  }
+  .cont-pesan-ceo h2 {
+    font-size: 2rem;
+  }
+  .cont-pesan-ceo p {
+    font-size: 1rem;
+  }
+  .cont-profil-SDM {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    margin-inline: 0;
+    /* background-color: aqua; */
+    /* display: flex;
+    flex-direction: column;
+    gap: 1rem; */
+    align-items: center;
+  }
+  .cont-profil-SDM h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .cont-cart-profil {
+    align-items: start;
+    /* background-color: #b50b0b; */
+    justify-content: center;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .hero-section-struktur {
+    height: 23rem;
+    margin-top: 2.6rem;
+  }
+  .cont-pesan-ceo {
+    flex-direction: column;
+    margin-inline: 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .cont-pesan-ceo img {
+    width: 25rem;
+  }
+  .cont-pesan-ceo h2 {
+    font-size: 2rem;
+  }
+  .cont-pesan-ceo p {
+    font-size: 1rem;
+  }
+  .cont-profil-SDM {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    margin-inline: 0;
+    /* background-color: aqua; */
+    /* display: flex;
+    flex-direction: column;
+    gap: 1rem; */
+    align-items: center;
+  }
+  .cont-profil-SDM h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .cont-cart-profil {
+    align-items: start;
+    /* background-color: #b50b0b; */
+    justify-content: center;
+  }
+}
+@media (min-width: 360px) and (max-width: 479px) {
+  .cont-pesan-ceo {
+    flex-direction: column;
+    margin-inline: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .cont-pesan-ceo img {
+    width: 20rem;
+  }
+  .cont-pesan-ceo h2 {
+    font-size: 2rem;
+  }
+  .cont-pesan-ceo p {
+    font-size: 1rem;
+  }
+  .hero-section-struktur {
+    height: 23rem;
+    margin-top: 2.6rem;
+  }
+  .cont-profil-SDM {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    margin-inline: 0;
+    /* background-color: aqua; */
+    /* display: flex;
+    flex-direction: column;
+    gap: 1rem; */
+    align-items: center;
+  }
+  .cont-profil-SDM h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .cont-cart-profil {
+    align-items: start;
+    /* background-color: #b50b0b; */
+    justify-content: center;
+  }
+}
