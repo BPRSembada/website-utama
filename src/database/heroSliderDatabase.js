@@ -1,5 +1,10 @@
 export const heroSlider = [
   {
+    head_text: "Sembada Tabungan Rejeki (STAR)",
+    desc: "web dev",
+    img_url: "../heroImage/star.jpg",
+  },
+  {
     head_text: "Percayakan solusi keuangan Anda dengan cepat dan nyaman",
     desc: "web dev",
     img_url: "../heroImage/new_kantor.jpg",

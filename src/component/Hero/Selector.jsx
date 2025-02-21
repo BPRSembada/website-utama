@@ -4,34 +4,48 @@ import { Form } from "react-bootstrap";
 
 const SelectorHome = () => {
   const [homeValue, setHomeValue] = useState("");
+  const [redirect, setRedirect] = useState(false);
+
   const onSelect = (e) => {
-    setHomeValue(e.target.value);
-    console.log(homeValue);
-  };
-  const handleNavigation = () => {
-    if (homeValue === "pinjaman") {
-      return <Navigate to="/kreditKerja" />;
-    } else if (homeValue === "Simpanan") {
-      return <Navigate to="/simKonvensional" />;
-    } else if (homeValue === "DepositBox") {
-      return <Navigate to="/saveDepositBox" />;
-    } else if (homeValue === "parembayan") {
-      return <Navigate to="/paymentPoint" />;
-    }else if (homeValue === "komunitas") {
-      return <Navigate to="/kemitraan" />;
-    }else if (homeValue === "organisasi") {
-      return <Navigate to="/karir" />;
+    const selectedValue = e.target.value;
+    setHomeValue(selectedValue);
+    console.log(selectedValue);
+
+    if (selectedValue === "star") {
+      window.location.href = "https://linktr.ee/marketinglendingstart";
+    } else {
+      setRedirect(true);
     }
   };
+
+  if (redirect) {
+    switch (homeValue) {
+      case "pinjaman":
+        return <Navigate to="/kreditKerja" />;
+      case "Simpanan":
+        return <Navigate to="/simKonvensional" />;
+      case "DepositBox":
+        return <Navigate to="/saveDepositBox" />;
+      case "parembayan":
+        return <Navigate to="/paymentPoint" />;
+      case "komunitas":
+        return <Navigate to="/kemitraan" />;
+      case "organisasi":
+        return <Navigate to="/karir" />;
+      default:
+        break;
+    }
+  }
+
   return (
     <div>
-      {handleNavigation()}
       <Form.Select
         value={homeValue}
         onChange={onSelect}
         className="option-home"
       >
-        <option>Saya ingin...</option>
+        <option value="">Saya ingin...</option>
+        <option value="star">Buka Tabungan Star</option>
         <option value="pinjaman">Pinjaman cepat, aman dan nyaman</option>
         <option value="Simpanan">Simpanan aman dan menguntungkan</option>
         <option value="DepositBox">
@@ -48,4 +62,5 @@ const SelectorHome = () => {
     </div>
   );
 };
+
 export default SelectorHome;
