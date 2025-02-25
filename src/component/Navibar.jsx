@@ -73,10 +73,7 @@ const Navibar = () => {
             <NavDropdown.Item href="./laporankeuangan">
               Laporan Keuangan
             </NavDropdown.Item>
-            <NavDropdown.Item
-              href="https://drive.google.com/drive/folders/1Y0Sd0mwuPbsvvH5vewVwGxBuyrkSUu_H?usp=drive_link"
-              target="_blank"
-            >
+            <NavDropdown.Item href="./laporantatakelola">
               Laporan Tata Kelola
             </NavDropdown.Item>
           </NavDropdown>

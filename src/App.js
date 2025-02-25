@@ -47,6 +47,7 @@ import Deposito from "./pages/Simpanan/deposito";
 
 import LelangPage from "./pages/Layanan/lelang";
 import DetailLelang from "./pages/Layanan/detailLelang";
+import LaporanTataKelola from "./pages/Tentang-Kami/laporantatakelola";
 
 // sweeper
 
@@ -73,6 +74,7 @@ class App extends React.Component {
           <Route path="/strategi" element={<Strategi />} />
           <Route path="/pengaduanNasabah" element={<PengaduanNasabah />} />
           <Route path="/laporankeuangan" element={<LaporanKeuangan />} />
+          <Route path="/laporantatakelola" element={<LaporanTataKelola />} />
           <Route path="/kontakKami" element={<KontakKami />} />
           <Route path="/kemitraan" element={<Kemitraan />} />
           <Route path="/karir" element={<Karir />} />
